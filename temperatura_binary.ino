@@ -41,8 +41,6 @@ void set_digital_to_low(){
 void show_temperature(String value_in_binary){
   int digitalPin_index = 2;
   for(int i=value_in_binary.length()-1;i>=0;i--){
-    Serial.println("");
-    Serial.print(value_in_binary[i]);
     if(value_in_binary[i] == '1'){
       digitalWrite(digitalPin_index,HIGH);
     }
